@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheets.css">
+    <title>Contacto | CineMatch</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerContenido">
+            <h1 class="logo">CineMatch</h1>
+            <nav class="menu" aria-label="Principal">
+                <a href="../index.html">Inicio</a>
+                <a href="descubrir.html">Descubrir</a>
+                <a href="listas.html">Listas</a>
+                <a href="contacto.html" class="activo">Contacto</a>
+            </nav>
+
+            <div class="buscador">
+                <label for="busqueda" class="visually-hidden">Buscar películas</label>
+                <input type="search" id="busqueda" placeholder="Buscar películas...">
+            </div>
+        </div>
+    </header>
+
+    <main class="contacto">
+        <h1>CONTACTO</h1>
+
+        <p class="introduccion">
+            ¿Tenés una consulta o pelicula para recomendar? <br>
+            Escribinos.
+        </p>
+
+        <form>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="motivo">Motivo de contacto</label>
+                <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>
+                    Seleccioná una opción
+                </option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="problema">Reportar un problema</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                id="mensaje"
+                name="mensaje"
+                required
+                ></textarea>
+            </div>
+
+            <button class="boton enviar" type="submit">
+                ENVIAR MENSAJE
+            </button>
+        </form>
+
+        <p class="instagram">
+        También encontranos en
+        <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="footerContenido">
+            <a class="logo" href="../index.html">CineMatch</a>
+
+            <nav class="menu" aria-label="Navegación del pie de página">
+                <a href="../index.html">Inicio</a>
+                <a href="./descubrir.html">Descubrir</a>
+                <a href="./listas.html">Listas</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+
+            <div class="redes">
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+        </div>
+        </footer>
+
+</body>
+</html>
